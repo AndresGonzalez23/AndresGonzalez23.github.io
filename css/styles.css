@@ -11067,9 +11067,11 @@ html {
 }
 
 .contact-icon {
-  width: 90px; /* Ajusta el tamaño del ícono */
-  height: auto;
+  max-width: 90px; /* Tamaño máximo */
+  height: auto; /* Mantiene la proporción */
+  margin: 0 auto; /* Centra los íconos horizontalmente */
 }
+
 
 .contact-section a {
   color: #1abc9c; /* Color principal del enlace */
