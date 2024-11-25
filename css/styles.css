@@ -11065,3 +11065,18 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.contact-icon {
+  width: 90px; /* Ajusta el tamaño del ícono */
+  height: auto;
+}
+
+.contact-section a {
+  color: #1abc9c; /* Color principal del enlace */
+  font-weight: bold;
+}
+
+.contact-section a:hover {
+  color: #15967d; /* Color al pasar el cursor */
+  text-decoration: underline;
+}
