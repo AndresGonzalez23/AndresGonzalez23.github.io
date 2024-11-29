@@ -36,8 +36,8 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center" style="background-image: url('assets/img/portfolio/cabin.png'); background-size: cover; background-position: center;">
-            <div class="container d-flex align-items-center flex-column">
+        <header class="masthead bg-primary text-white text-center" style="background-image: url('assets/img/portfolio/homepage.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
+            <div class="container d-flex align-items-center justify-content-center flex-column" style="height: 100%;">
                 <!-- Masthead Avatar Image-->
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Andrés González Varela</h1>
@@ -49,10 +49,10 @@
                 <p class="masthead-subheading font-weight-light mb-0">Estudiante de Ingeniería Informática</p>
             </div>
         </header>
-        <section class="page-section text-white mb-0" id="acercaDe" style="background-color: var(--bs-green);">
+        <section class="page-section text-black mb-0" id="acercaDe" style="background-color: var(--bs-green);">
             <div class="container">
-                <h2 class="page-section-heading text-center text-uppercase text-white">Acerca de mí</h2>
-                <div class="divider-custom divider-light">
+                <h2 class="page-section-heading text-center text-uppercase text-black">Acerca de mí</h2>
+                <div class="divider-custom divider-dark">
                     <div class="divider-custom-line divider-custom-line-short"></div>
                 </div>
                 <div class="row">
@@ -71,7 +71,6 @@
                         </p>
                     </div>
                 </div>
-                
             </div>
         </section>
         
@@ -144,12 +143,12 @@
             </div>
         </section>
         <!-- CV Section-->
-        <section class="page-section text-white mb-0" id="cv" style="background-color: var(--bs-green);">
+        <section class="page-section text-black mb-0" id="cv" style="background-color: var(--bs-green);">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Curriculum</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-black">Curriculum</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom divider-dark">
                     <div class="divider-custom-line divider-custom-line-medium"></div>
                 </div>
                 <!-- About Section Content-->
@@ -158,7 +157,7 @@
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="assets/Cv.pdf" download="documento.pdf">
+                    <a class="btn btn-xl btn-outline-dark" href="assets/Cv.pdf" target="_blank">
                         <i class="fas fa-download me-2"></i>
                         Descargar CV
                     </a>
@@ -232,23 +231,33 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
+                                    <!-- Portfolio Modal - Title -->
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">CakeHoot</h2>
-                                    <!-- Icon Divider-->
+                                    <!-- Icon Divider -->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line divider-custom-line-medium"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-justify">Proyecto realizado para la asignatura de Multimedia de la rama de Tecnologías de la Información en la Escuela Superior de 
-                                        Informática de Ciudad Real. Se trata de una aplicación multimedia de escritorio gamificada al estilo Kahoot, Trivial, etc. 
-                                        En este caso la temática estará centrada en libros y series varias, aunque es posible modificarlo añadiendo imágenes, audios o 
-                                        preguntas propias.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Cerrar Ventana
-                                    </button>
+                                    <!-- Portfolio Modal - Image -->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." style="width: 70%" />
+                                    <!-- Portfolio Modal - Text -->
+                                    <p class="mb-4 text-center">
+                                        Proyecto realizado para la asignatura de Multimedia de la rama de Tecnologías de la Información en la Escuela Superior de
+                                        Informática de Ciudad Real. Se trata de una aplicación multimedia de escritorio gamificada al estilo Kahoot, Trivial, etc.
+                                        En este caso la temática estará centrada en libros y series varias, aunque es posible modificarlo añadiendo imágenes, audios o
+                                        preguntas propias.
+                                    </p>
+                                    <!-- Buttons -->
+                                    <div class="d-flex flex-column align-items-center">
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/AndresGonzalez23/Multimedia-Game" target="_blank" class="btn btn-primary mb-3 w-50">
+                                            <i class="fab fa-github fa-fw"></i> Ver en GitHub
+                                        </a>
+                                        <!-- Close Button -->
+                                        <button class="btn btn-primary w-50" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Cerrar Ventana
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -256,6 +265,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Portfolio Modal 2-->
         <div class="portfolio-modal modal fade" id="pokemon" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -272,16 +282,24 @@
                                         <div class="divider-custom-line divider-custom-line-medium"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/teddiursa.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/teddiursa.png" alt="..." style="width: 70%"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-justify">Proyecto realizado para la asignatura de Interacción Persona-Ordenador II con el framework WPF. Consistia en la creación y animación de un Pokemon usando WPF y Blender para modelar. 
+                                    <p class="mb-4 text-center" >Proyecto realizado para la asignatura de Interacción Persona-Ordenador II con el framework WPF. Consistia en la creación y animación de un Pokemon usando WPF y Blender para modelar. 
                                         El Pokemon cuenta con ataques, asi como barra de vida y energía, a modo de gamificación ya que luego más tarde se realizó un proyecto conjunto en el que se aunaban varios
                                         controles de usuario con diferentes Pokemons para que combatiesen entre ellos.
                                     </p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Cerrar Ventana
-                                    </button>
+
+                                    <div class="d-flex flex-column align-items-center">
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/AndresGonzalez23/PokemonWPF" target="_blank" class="btn btn-primary mb-3 w-50">
+                                            <i class="fab fa-github fa-fw"></i> Ver en GitHub
+                                        </a>
+                                        <!-- Close Button -->
+                                        <button class="btn btn-primary w-50" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Cerrar Ventana
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -305,15 +323,22 @@
                                         <div class="divider-custom-line divider-custom-line-medium"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/manatreck2.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/manatreck2.png" alt="..." style="width: 70%"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-justify">Proyecto realizado para la asignatura de Interacción Persona-Ordenador I, el cual consistia en la creación de una interfaz que permitiese el manejo y modificación de varias
+                                    <p class="mb-4 text-center">Proyecto realizado para la asignatura de Interacción Persona-Ordenador I, el cual consistia en la creación de una interfaz que permitiese el manejo y modificación de varias
                                         rutas senderísticas, asi como sus asistentes y diferentes guias. 
                                     </p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Cerrar Ventana
-                                    </button>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/AndresGonzalez23/ManaTreck" target="_blank" class="btn btn-primary mb-3 w-50">
+                                            <i class="fab fa-github fa-fw"></i> Ver en GitHub
+                                        </a>
+                                        <!-- Close Button -->
+                                        <button class="btn btn-primary w-50" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Cerrar Ventana
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -337,15 +362,22 @@
                                         <div class="divider-custom-line divider-custom-line-short"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/concerts.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/concerts.png" alt="..." style="width: 70%"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-justify">Proyecto realizado para la asignatura de Bases de Datos en Visual Basic .NET. La aplicación permite crear, modificar y borrar albumes, canciones, conciertos, artistas y eventos. 
+                                    <p class="mb-4 text-center">Proyecto realizado para la asignatura de Bases de Datos en Visual Basic .NET. La aplicación permite crear, modificar y borrar albumes, canciones, conciertos, artistas y eventos. 
                                         Centrada sobretodo en el manejo de bases de datos con consultas SQL.
                                     </p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Cerrar Ventana
-                                    </button>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/AndresGonzalez23/SetList-Databases" target="_blank" class="btn btn-primary mb-3 w-50">
+                                            <i class="fab fa-github fa-fw"></i> Ver en GitHub
+                                        </a>
+                                        <!-- Close Button -->
+                                        <button class="btn btn-primary w-50" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Cerrar Ventana
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -369,13 +401,20 @@
                                         <div class="divider-custom-line divider-custom-line-medium"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." style="width: 70%"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Cerrar Ventana
-                                    </button>
+                                    <p class="mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/tu-repositorio/cakehoot" target="_blank" class="btn btn-primary mb-3 w-50">
+                                            <i class="fab fa-github fa-fw"></i> Ver en GitHub
+                                        </a>
+                                        <!-- Close Button -->
+                                        <button class="btn btn-primary w-50" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Cerrar Ventana
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -399,13 +438,20 @@
                                         <div class="divider-custom-line divider-custom-line-medium"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." style="width: 70%"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Cerrar Ventana
-                                    </button>
+                                    <p class="mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <div class="d-flex flex-column align-items-center">
+                                        <!-- GitHub Button -->
+                                        <a href="https://github.com/tu-repositorio/cakehoot" target="_blank" class="btn btn-primary mb-3 w-50">
+                                            <i class="fab fa-github fa-fw"></i> Ver en GitHub
+                                        </a>
+                                        <!-- Close Button -->
+                                        <button class="btn btn-primary w-50" data-bs-dismiss="modal">
+                                            <i class="fas fa-xmark fa-fw"></i>
+                                            Cerrar Ventana
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
