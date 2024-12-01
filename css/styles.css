@@ -6622,20 +6622,20 @@ textarea.form-control-lg {
 }
 
 /* Asegurar que todas las cajas tienen el mismo tamaño */
-.row {
+.row-custom {
   display: flex;
   flex-wrap: wrap;
   gap: 15px; /* Espacio entre las cajas */
   justify-content: space-between; /* Asegura que haya separación entre las cajas */
 }
 
-.row .col-md-6 {
+.row-custom .col-md-6 {
   display: flex;
   flex: 1 1 48%; /* Las columnas ocuparán el 48% del ancho */
   flex-wrap: wrap; /* Permite que las cajas se acomoden en varias filas */
 }
 
-.row .col-md-6 .icons-box {
+.row-custom .col-md-6 .icons-box {
   margin-top: 5px; /* Separación entre las cajas de abajo y arriba */
   height: auto; /* Permite que la altura se ajuste a las cajas */
 }
