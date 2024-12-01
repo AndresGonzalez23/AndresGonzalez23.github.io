@@ -6557,6 +6557,117 @@ textarea.form-control-lg {
 .offcanvas.showing, .offcanvas.show:not(.hiding) {
   transform: none;
 }
+
+.icons-box {
+  position: relative;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px; /* Separación entre las cajas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 48%; /* Asegura que las cajas se distribuyan bien en filas */
+}
+
+.icons-title {
+  font-family: "Monserrat";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.icons-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+  position: relative;
+  padding: 5px;
+  flex: 0 0 33.333%;
+}
+
+.icons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 64px; /* Espacio entre iconos */
+}
+
+.icons-icon img {
+  width: 76px; /* Tamaño de los iconos */
+  height: auto;
+  margin-bottom: 16px; /* Espacio entre la imagen y el texto */
+}
+
+.gestion-proyectos {
+  display: flex;
+  flex-direction: column; /* Coloca los iconos en una columna */
+  align-items: center; /* Centra los iconos */
+  gap: 16px; /* Ajusta el espacio entre los iconos */
+}
+
+.gestion-proyectos .icons-icon {
+  flex: 0 0 100%; /* Asegura que cada icono ocupe el 100% del ancho */
+  text-align: center;
+}
+
+/* Asegurar que todas las cajas tienen el mismo tamaño */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Espacio entre las cajas */
+  justify-content: space-between; /* Asegura que haya separación entre las cajas */
+}
+
+.row .col-md-6 {
+  display: flex;
+  flex: 1 1 48%; /* Las columnas ocuparán el 48% del ancho */
+  flex-wrap: wrap; /* Permite que las cajas se acomoden en varias filas */
+}
+
+.row .col-md-6 .icons-box {
+  margin-top: 5px; /* Separación entre las cajas de abajo y arriba */
+  height: auto; /* Permite que la altura se ajuste a las cajas */
+}
+
+.icons-box .no-tecnicas {
+  margin-top: 20px; /* Puedes ajustar el valor del margen superior */
+}
+
+/* Estilos específicos para el apartado "No Técnicas" */
+.icons-grid.no-tecnicas {
+  display: flex;
+  flex-wrap: nowrap;  /* Los iconos estarán en una fila */
+  justify-content: space-between; /* Distribuye los iconos de manera equitativa */
+  gap: 16px; /* Espacio entre los iconos */
+  width: 100%;
+}
+
+.icons-grid.no-tecnicas .icons-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 18%; /* Cada icono ocupará el 18% del ancho para que quepan 5 iconos en fila */
+  padding: 5px;
+}
+
+.icons-grid.no-tecnicas .icons-icon img {
+  width: 76px; /* Tamaño de los iconos */
+  height: auto;
+  margin-bottom: 16px; /* Espacio entre la imagen y el texto */
+}
+
 .offcanvas.showing, .offcanvas.hiding, .offcanvas.show {
   visibility: visible;
 }
@@ -8127,6 +8238,11 @@ textarea.form-control-lg {
 
 .text-justify {
   text-align: justify;
+}
+
+.text-justify-center {
+  text-align: justify;
+  text-align-last: center;
 }
 
 .bg-primary {
