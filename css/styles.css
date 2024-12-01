@@ -6647,7 +6647,7 @@ textarea.form-control-lg {
 /* Estilos específicos para el apartado "No Técnicas" */
 .icons-grid.no-tecnicas {
   display: flex;
-  flex-wrap: nowrap;  /* Los iconos estarán en una fila */
+  flex-wrap: wrap;  /* Los iconos estarán en una fila */
   justify-content: space-between; /* Distribuye los iconos de manera equitativa */
   gap: 16px; /* Espacio entre los iconos */
   width: 100%;
