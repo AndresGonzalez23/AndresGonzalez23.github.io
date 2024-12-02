@@ -6564,7 +6564,7 @@ textarea.form-control-lg {
   border: 2px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 30px; /* Separación entre las cajas */
+  margin-bottom: 20px; /* Separación entre las cajas */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6625,7 +6625,7 @@ textarea.form-control-lg {
 .row-custom {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px; /* Espacio entre las cajas */
+  gap: 20px; /* Espacio entre las cajas */
   justify-content: space-between; /* Asegura que haya separación entre las cajas */
 }
 
@@ -11203,4 +11203,8 @@ html {
 .contact-section a:hover {
   color: #15967d; /* Color al pasar el cursor */
   text-decoration: underline;
+}
+
+.tabbed-content {
+  padding-left: 20px; /* O el valor que prefieras */
 }
