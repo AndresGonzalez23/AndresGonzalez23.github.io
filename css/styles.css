@@ -11208,3 +11208,7 @@ html {
 .tabbed-content {
   padding-left: 20px; /* O el valor que prefieras */
 }
+
+.tabbed-content-twice {
+  padding-left: 40px; /* O el valor que prefieras */
+}
