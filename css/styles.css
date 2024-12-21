@@ -782,6 +782,8 @@ progress {
 .col-11 {
   flex: 0 0 auto;
   width: 91.66666667%;
+  margin-left: 30px; /* Ajuste para separar el contenido de la línea */
+  position: relative;
 }
 
 .col-12 {
@@ -11212,3 +11214,49 @@ html {
 .tabbed-content-twice {
   padding-left: 40px; /* O el valor que prefieras */
 }
+
+.estudios-container {
+  position: relative;
+}
+
+.study-entry {
+  display: flex;
+  position: relative;
+  padding-left: 10px; /* Espacio para el punto y la línea */
+  margin-bottom: 5px; /* Espaciado entre entradas */
+}
+
+.point {
+  position: absolute;
+  left: 0; /* Alinea el punto con el contenedor */
+  top: 8px; /* Ajusta la posición vertical del punto */
+  width: 14px;
+  height: 14px;
+  background-color: #004d40; /* Color del punto */
+  border-radius: 50%; /* Hace que sea un círculo */
+  z-index: 2;
+}
+
+.study-entry::after {
+  content: "";
+  position: absolute;
+  left: 6px; /* Alinea la línea con el centro del punto */
+  top: 20px; /* Punto de inicio de la línea */
+  height: calc(100% + 0px); /* Extiende la línea hasta el siguiente punto */
+  width: 2px; /* Grosor de la línea */
+  background-color: #004d40; /* Color de la línea */
+  z-index: 1;
+}
+
+.study-entry:last-child::after {
+  /* Elimina la línea del último elemento */
+  display: none;
+}
+
+.content {
+  position: relative;
+  z-index: 3; /* Asegura que el contenido esté encima de la línea */
+}
+
+
+
